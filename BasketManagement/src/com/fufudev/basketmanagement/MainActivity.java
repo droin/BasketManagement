@@ -80,6 +80,7 @@ public class MainActivity extends Activity {
         setupUI();
         
 //        setupJoueurs();
+        // petite modif
         
     }
     
