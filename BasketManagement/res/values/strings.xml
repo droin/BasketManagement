@@ -1,0 +1,67 @@
+<resources>
+
+    <string name="app_name">BasketManagement</string>
+    <string name="hello_world">Hello world!</string>    
+    <string name="title_activity_main">BasketManagement</string>
+
+    <string name="tv_titre_joueurs">Joueurs</string>
+    <string name="numero_joueur1">.</string>
+    <string name="numero_joueur2">.</string>
+    <string name="numero_joueur3">.</string>
+    <string name="numero_joueur4">.</string>
+    <string name="numero_joueur5">.</string>
+    <string name="numero_joueur6">.</string>
+    <string name="numero_joueur7">.</string>
+    <string name="numero_joueur8">.</string>
+    <string name="numero_joueur9">.</string>
+    <string name="numero_joueur10">.</string>
+    <string name="tv_titre_actions">Actions</string>
+    <string name="tir2marque">TM2</string>
+    <string name="tir2tente">TT2</string>
+    <string name="tir3marque">TM3</string>
+    <string name="tir3tente">TT3</string>
+    <string name="lfmarque">LFM</string>
+    <string name="lftente">LFT</string>
+    <string name="passdec">PD</string>
+    <string name="reboff">RO</string>
+    <string name="rebdef">RD</string>
+    <string name="interc">INT</string>
+    <string name="contr">CTR</string>
+    <string name="balperd">BP</string>
+    <string name="fautprov">FPr</string>
+    <string name="fautpers">FPe</string>
+    <string name="minentr">MEnt</string>
+    <string name="minsort">MSor</string>
+    <string name="tv_joueur_num_nom"># - NOM JOUEUR</string>
+    <string name="joueur_points">Points</string>
+    <string name="joueur_num_points">0</string>
+    <string name="joueur_tir2">Tirs</string>
+    <string name="joueur_num_tir2">0 / 0</string>
+    <string name="joueur_tir3">Tirs à 3 points</string>
+    <string name="joueur_num_tir3">0 / 0</string>
+    <string name="joueur_lancerfranc">Lancers francs</string>
+    <string name="joueur_num_lancerfranc">0 / 0</string>
+    <string name="joueur_passdec">Passes décisives</string>
+    <string name="joueur_num_passdec">0</string>
+    <string name="joueur_rebond">Rebonds (Off)</string>
+    <string name="joueur_num_rebond">0 (0)</string>
+    <string name="joueur_interc">Interceptions</string>
+    <string name="joueur_num_interc">0</string>
+    <string name="joueur_contr">Contres</string>
+    <string name="joueur_num_contr">0</string>
+    <string name="joueur_balperd">Ballons perdus</string>
+    <string name="joueur_num_balperd">0</string>
+    <string name="joueur_fautes">Fautes Provoquées/Personnelles</string>
+    <string name="joueur_num_fautes">0 / 0</string>
+    <string name="joueur_eval">Évaluation</string>
+    <string name="joueur_num_eval">0</string>
+
+    <string name="menu_settings">Paramètres</string>
+    <string name="menu_undoLastAction">Annuler</string>
+    <string name="menu_exit">Sortir</string>
+    <string name="menu_creerJoueur">Créer un joueur</string>
+    
+    <string name= "dialog_tv_nb_joueurs">Nombre de joueurs à ajouter</string>
+    <string name= "dialog_et_num_joueur_hint">0</string>
+    <string name= "dialog_et_nom_joueur_hint">Nom</string>
+</resources>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#333333"
+    android:orientation="vertical"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp" >
+    
+    <TextView
+        android:id="@id/tv_titre_joueurs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextviewTitreStyle"
+        android:text="@string/tv_titre_joueurs" />
+    
+    <GridLayout
+        android:id="@id/grid_joueurs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="5"
+        android:orientation="horizontal" >
+    
+	    <ToggleButton
+	        android:id="@id/btn_joueur1"
+	        android:onClick="onClickJoueur"
+	        android:textOff="@string/numero_joueur1"
+	        android:textOn="@string/numero_joueur1"
+	        android:enabled="false" />
+	
+	    <ToggleButton
+	        android:id="@id/btn_joueur2"
+	        android:onClick="onClickJoueur"
+	        android:textOff="@string/numero_joueur2"
+	        android:textOn="@string/numero_joueur2"
+	        android:enabled="false" />
+	
+	    <ToggleButton
+	        android:id="@id/btn_joueur3"
+	        android:onClick="onClickJoueur"
+	        android:textOff="@string/numero_joueur3"
+	        android:textOn="@string/numero_joueur3"
+	        android:enabled="false" />
+	
+	    <ToggleButton
+	        android:id="@id/btn_joueur4"
+	        android:onClick="onClickJoueur"
+	        android:textOff="@string/numero_joueur4"
+	        android:textOn="@string/numero_joueur4"
+	        android:enabled="false" />
+	
+	    <ToggleButton
+	        android:id="@id/btn_joueur5"
+	        android:onClick="onClickJoueur"
+	        android:textOff="@string/numero_joueur5"
+	        android:textOn="@string/numero_joueur5"
+	        android:enabled="false" />
+	
+	    <ToggleButton
+	        android:id="@id/btn_joueur6"
+	        android:onClick="onClickJoueur"
+	        android:textOff="@string/numero_joueur6"
+	        android:textOn="@string/numero_joueur6"
+	        android:enabled="false" />
+	
+	    <ToggleButton
+	        android:id="@id/btn_joueur7"
+	        android:onClick="onClickJoueur"
+	        android:textOff="@string/numero_joueur7"
+	        android:textOn="@string/numero_joueur7"
+	        android:enabled="false" />
+	
+	    <ToggleButton
+	        android:id="@id/btn_joueur8"
+	        android:onClick="onClickJoueur"
+	        android:textOff="@string/numero_joueur8"
+	        android:textOn="@string/numero_joueur8"
+	        android:enabled="false" />
+	
+	    <ToggleButton
+	        android:id="@id/btn_joueur9"
+	        android:onClick="onClickJoueur"
+	        android:textOff="@string/numero_joueur9"
+	        android:textOn="@string/numero_joueur9"
+	        android:enabled="false" />
+	
+	    <ToggleButton
+	        android:id="@id/btn_joueur10"
+	        android:onClick="onClickJoueur"
+	        android:textOff="@string/numero_joueur10"
+	        android:textOn="@string/numero_joueur10"
+	        android:enabled="false" />
+	    
+	</GridLayout>
+	    
+    <TextView
+        android:id="@id/tv_titre_actions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextviewTitreStyle"
+        android:text="@string/tv_titre_actions" />
+	
+     <GridLayout
+         android:id="@id/grid_joueurs"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:columnCount="5"
+         android:orientation="horizontal" >
+    
+	    <ToggleButton 
+	        android:id="@id/btn_tir2marque"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/tir2marque"
+	        android:textOff="@string/tir2marque" />
+	
+		<ToggleButton 
+	        android:id="@id/btn_tir2tente"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/tir2tente"
+	        android:textOff="@string/tir2tente" />
+	
+	    <ToggleButton 
+	        android:id="@id/btn_tir3marque"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/tir3marque"
+	        android:textOff="@string/tir3marque" />
+	    	
+		<ToggleButton 
+	        android:id="@id/btn_tir3tente"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/tir3tente"
+	        android:textOff="@string/tir3tente" />
+	    
+		<ToggleButton 
+	        android:id="@id/btn_passdec"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/passdec"
+	        android:textOff="@string/passdec" />
+	    
+	    <ToggleButton 
+	        android:id="@id/btn_lfmarque"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/lfmarque"
+	        android:textOff="@string/lfmarque" />
+		
+	    <ToggleButton 
+	        android:id="@id/btn_lftente"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/lftente"
+	        android:textOff="@string/lftente" />
+	    
+		<ToggleButton 
+	        android:id="@id/btn_reboff"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/reboff"
+	        android:textOff="@string/reboff" />
+		
+		<ToggleButton 
+	        android:id="@id/btn_rebdef"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/rebdef"
+	        android:textOff="@string/rebdef" />
+		
+		<ToggleButton 
+	        android:id="@id/btn_balperd"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/balperd"
+	        android:textOff="@string/balperd" />
+		
+		<ToggleButton 
+	        android:id="@id/btn_interc"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/interc"
+	        android:textOff="@string/interc" />
+		
+		<ToggleButton 
+	        android:id="@id/btn_contr"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/contr"
+	        android:textOff="@string/contr" />
+		
+		<ToggleButton 
+	        android:id="@id/btn_fautprov"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/fautprov"
+	        android:textOff="@string/fautprov" />
+		
+		<ToggleButton 
+	        android:id="@id/btn_fautpers"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/fautpers"
+	        android:textOff="@string/fautpers" />
+		
+<!-- 	<ToggleButton 
+	        android:id="@id/btn_minentr"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/minentr"
+	        android:textOff="@string/minentr" />
+		
+		<ToggleButton 
+	        android:id="@id/btn_minsort"
+	        android:onClick="onClickActions"
+	        android:textOn="@string/minsort"
+	        android:textOff="@string/minsort" />  -->	
+		
+	</GridLayout>
+	
+	<TextView
+	    android:id="@id/tv_joueur_num_nom"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/TextviewTitreStyle"
+	    android:gravity="center_horizontal"
+	    android:text="@string/tv_joueur_num_nom"
+	    android:textSize="20sp" />
+	
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:orientation="vertical" >
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+			        android:id="@id/tv_joueur_points"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_points"
+			        android:layout_weight="1" />
+			    <TextView
+			        android:id="@id/tv_joueur_num_points"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_num_points"
+			        android:layout_weight="4"
+			        android:gravity="right" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+			        android:id="@id/tv_joueur_tir2"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_tir2"
+			        android:layout_weight="1" />
+			    <TextView
+			        android:id="@id/tv_joueur_num_tir2"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_num_tir2"
+			        android:layout_weight="4"
+			        android:gravity="right" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+			        android:id="@id/tv_joueur_tir3"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_tir3"
+			        android:layout_weight="1" />
+			    <TextView
+			        android:id="@id/tv_joueur_num_tir3"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_num_tir3"
+			        android:layout_weight="4"
+			        android:gravity="right" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+			        android:id="@id/tv_joueur_lancerfranc"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_lancerfranc"
+			        android:layout_weight="1" />
+			    <TextView
+			        android:id="@id/tv_joueur_num_lancerfranc"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_num_lancerfranc"
+			        android:layout_weight="4"
+			        android:gravity="right" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+			        android:id="@id/tv_joueur_passdec"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_passdec"
+			        android:layout_weight="1" />
+			    <TextView
+			        android:id="@id/tv_joueur_num_passdec"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_num_passdec"
+			        android:layout_weight="4"
+			        android:gravity="right" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+			        android:id="@id/tv_joueur_rebond"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_rebond"
+			        android:layout_weight="1" />
+			    <TextView
+			        android:id="@id/tv_joueur_num_rebond"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_num_rebond"
+			        android:layout_weight="4"
+			        android:gravity="right" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+			        android:id="@id/tv_joueur_interc"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_interc"
+			        android:layout_weight="1" />
+			    <TextView
+			        android:id="@id/tv_joueur_num_interc"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_num_interc"
+			        android:layout_weight="4"
+			        android:gravity="right" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+			        android:id="@id/tv_joueur_contr"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_contr"
+			        android:layout_weight="1" />
+			    <TextView
+			        android:id="@id/tv_joueur_num_contr"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_num_contr"
+			        android:layout_weight="4"
+			        android:gravity="right" />
+	        </LinearLayout>
+	    
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+			        android:id="@id/tv_joueur_balperd"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_balperd"
+			        android:layout_weight="1" />
+			    <TextView
+			        android:id="@id/tv_joueur_num_balperd"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_num_balperd"
+			        android:layout_weight="4"
+			        android:gravity="right" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+			        android:id="@id/tv_joueur_fautes"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_fautes"
+			        android:layout_weight="1" />
+			    <TextView
+			        android:id="@id/tv_joueur_num_fautes"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_num_fautes"
+			        android:layout_weight="4"
+			        android:gravity="right" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+			        android:id="@id/tv_joueur_eval"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_eval"
+			        android:layout_weight="1" />
+			    <TextView
+			        android:id="@id/tv_joueur_num_eval"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="@style/TextviewStyle"
+			        android:text="@string/joueur_num_eval"
+			        android:layout_weight="4"
+			        android:gravity="right" />
+	        </LinearLayout>	        
+	        
+        </LinearLayout>
+        	
+	</ScrollView>
+     
+</LinearLayout>

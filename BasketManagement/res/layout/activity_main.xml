@@ -1,0 +1,549 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_score"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+	    <ToggleButton
+	        android:id="@+id/btn_teamA"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textOff="Team A"
+	        android:textOn="Team A" />
+
+	    <TextView
+	        android:id="@+id/tv_scoreA"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:gravity="center"
+	        android:text="0" />
+
+	    <TextView
+	        android:id="@+id/tv_scoreB"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:gravity="center"
+	        android:text="0" />
+
+	    <ToggleButton
+	        android:id="@+id/btn_teamB"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textOff="Team B"
+	        android:textOn="Team B" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_tir"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+	    android:layout_below="@+id/ll_score">
+	    <Button
+	        android:id="@+id/btn_ll_tir"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Tir"
+	        android:textStyle="bold" />
+	    <LinearLayout 
+	        android:id="@+id/ll_tir_next"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:visibility="gone">
+	        <Button 
+	            android:id="@+id/btn_tm2"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="2 points" />
+	        <Button 
+	            android:id="@+id/btn_tm3"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="3 points" />
+	        <Button 
+	            android:id="@+id/btn_ro"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Rebond Off" />
+	        <Button 
+	            android:id="@+id/btn_rd"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Rebond Def" />
+	        <Button 
+	            android:id="@+id/btn_bp"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Ballon perdu" />
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:id="@+id/ll_bp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+	    android:layout_below="@+id/ll_tir">
+	    <Button
+	        android:id="@+id/btn_ll_bp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Ballon perdu"
+	        android:textStyle="bold" />
+
+	    	<LinearLayout
+	    	    android:id="@+id/ll_bp_next"
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:orientation="vertical"
+	    	    android:visibility="gone" >
+
+		        <Button 
+		            android:id="@+id/btn_fo"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Faute Off" />
+		        <Button 
+		            android:id="@+id/btn_int"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Interception" />
+		        <Button 
+		            android:id="@+id/btn_viol"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Violation" />
+	    	</LinearLayout>
+	    
+	</LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/ll_fd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+	    android:layout_below="@+id/ll_bp">
+	    <Button
+	        android:id="@+id/btn_ll_fd"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Faute défensive"
+	        android:textStyle="bold" />
+
+	    	<LinearLayout
+	    	    android:id="@+id/ll_fd_next"
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:orientation="vertical"
+	    	    android:visibility="gone" >
+
+		        <Button 
+		            android:id="@+id/btn_lf0"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Pas de LF" />
+		        <Button 
+		            android:id="@+id/btn_lf1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="1 LF" />
+		        <Button 
+		            android:id="@+id/btn_lf2"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="2 LF" />
+		        <Button 
+		            android:id="@+id/btn_lf3"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="3 LF" />
+	    	</LinearLayout>
+	    	<LinearLayout 
+	    	    android:id="@+id/ll_fd_next_next"
+	    	    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:visibility="gone">
+	    	    <Button 
+		            android:id="@+id/btn_lfm"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="LF marqué" />
+	    	    <Button 
+		            android:id="@+id/btn_lfr"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="LF raté" />
+	    	    <Button 
+		            android:id="@+id/btn_lfr_ro"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Rebond Off" />
+	    	    <Button 
+		            android:id="@+id/btn_lfr_rd"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Rebond Def" />
+	    	</LinearLayout>
+	    
+	</LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/ll_fo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+	    android:layout_below="@+id/ll_fd">
+	    <Button
+	        android:id="@+id/btn_ll_fo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Faute offensive"
+	        android:textStyle="bold" />
+	</LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_fo">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView 
+                android:id="@+id/tv_teamA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_poss_A"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Possessions" />
+	            <TextView android:id="@+id/tv_poss_A_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_tt_A"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Tir tenté" />
+	            <TextView android:id="@+id/tv_tt_A_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_tm_A"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Tir marqué" />
+	            <TextView android:id="@+id/tv_tm_A_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_ro_A"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Rebond Off" />
+	            <TextView android:id="@+id/tv_ro_A_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_rd_A"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Rebond Def" />
+	            <TextView android:id="@+id/tv_rd_A_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_int_A"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Interceptions" />
+	            <TextView android:id="@+id/tv_int_A_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_bp_A"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Ballons perdus" />
+	            <TextView android:id="@+id/tv_bp_A_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_lft_A"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="LF tenté" />
+	            <TextView android:id="@+id/tv_lft_A_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_lfm_A"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="LF marqué" />
+	            <TextView android:id="@+id/tv_lfm_A_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/tv_teamB"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_poss_B_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+	            <TextView android:id="@+id/tv_poss_B"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Possessions"
+	                android:gravity="right" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_tt_B_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+	            <TextView android:id="@+id/tv_tt_B"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Tir tenté"
+	                android:gravity="right" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_tm_B_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+	            <TextView android:id="@+id/tv_tm_B"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Tir marqué"
+	                android:gravity="right" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_ro_B_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+	            <TextView android:id="@+id/tv_ro_B"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Rebond Off"
+	                android:gravity="right" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_rd_B_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+	            <TextView android:id="@+id/tv_rd_B"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Rebond Def"
+	                android:gravity="right" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_int_B_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+	            <TextView android:id="@+id/tv_int_B"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Interceptions"
+	                android:gravity="right" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_bp_B_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+	            <TextView android:id="@+id/tv_bp_B"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Ballons perdus"
+	                android:gravity="right" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_lft_B_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+	            <TextView android:id="@+id/tv_lft_B"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="LF tenté"
+	                android:gravity="right" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <TextView android:id="@+id/tv_lfm_B_num"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="5"
+	                android:text="0"
+	                android:gravity="center" />
+	            <TextView android:id="@+id/tv_lfm_B"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="LF marqué"
+	                android:gravity="right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+</RelativeLayout>

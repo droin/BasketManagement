@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="TextviewTitreStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#DDDDDD</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TextviewStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#DDDDDD</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+</resources>
